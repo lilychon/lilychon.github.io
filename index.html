@@ -1,48 +1,42 @@
 <!DOCTYPE html>
-
 <html lang="en-us">
-    
-<!-- Header -->
 
 <head>
 
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Lily Chon</title>
 
-    <title>About</title>
-
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="Assets/css/style.css">
 
 </head>
 
 <body>
-    <!-- <div class="navBar"> -->
-    <nav>
-        <div class="clearfix">
-            <h1 class="name">Lily Chon</h1>
-            <div class="info">
-                <ul>
 
-                    <li class="contact"><a href="contact.html">Contact</a></li>
-                    <li class="portfolio"><a href="portfolio.html">Portfolio</a></li>
-                    <li class="index"><a href="index.html">About</a></li>
-                </ul>
+    <div class="container-fluid" id="navbar">
+        <div class="row">
+            <div class="col-md-3" id="name">
+            Lily Chon
+            </div>
+            <div class="col">
+                <nav class="nav">
+                    <a class="nav-link" id="index" href="index.html">About</a>
+                    <a class="nav-link" id="portfolio" href="portfolio.html">Portfolio</a>
+                    <a class="nav-link" id="contact" href="contact.html">Contact</a>
+                </nav>
             </div>
         </div>
-    </nav>
+    </div>
 
-    <div class="container">
-        <div class="box">
-            <div class="ibox">
-                <h1>About Me</h1>
-
+    <div class="container-fluid" id="margin">
+        <div class="row">
+            <div class="col-md-8" id="box">
+                <p id="about">About Me</p>
                 <hr>
-
-                <section id="intro">
-
-                    <p>
-                        <img id="lily" src="assets/images/lily.jpg" alt="Lily Chon" />
-                    </p>
-
+                <div class="row">
+                    <section id="intro">
+                        <img class="img-responsive" id="lily" src="assets/images/lily.jpg" alt="Lily Chon" />
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas tempor tortor, vel
                         egestas tortor finibus non. Duis ut dui erat. Nam in magna ac nulla sodales porttitor sit amet
@@ -60,27 +54,16 @@
                         amet vehicula hendrerit. Maecenas vehicula porta tristique. Morbi ac lorem leo. Nulla tincidunt
                         consectetur auctor.
                     </p>
-
-                    <p>
-                            Suspendisse metus est, elementum a leo in, gravida cursus erat. Sed aliquet sapien neque, vitae
-                            ultricies elit vehicula ut. Donec nisl enim, consequat ut dolor eu, dictum molestie felis. Sed a
-                            sem dolor. Aliquam sit amet efficitur elit. Nam consectetur, odio id venenatis consequat, erat
-                            dui laoreet risus, eu egestas ipsum nibh vitae nisi. Aliquam lobortis sit amet velit consectetur
-                            dictum. Nullam vulputate augue non orci pharetra elementum. Cras ac tortor eleifend, efficitur
-                            nisl eu, consequat purus. Nunc mauris sem, gravida at porttitor nec, fringilla sed neque.
-                            Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc blandit, ligula in porta
-                            ornare, mauris dolor tincidunt ante, ac tristique sem metus sit amet mi.
-                    </p>
-                </section>
+                    </section>
+                </div>
             </div>
         </div>
     </div>
-
-
-</body>
-
-    <div class="footer">
+        
+    <div class="row" id="footer">
         <p>Copyright ©</p>
     </div>
+
+</body>
 
 </html>
