@@ -1,90 +1,17 @@
-/* Navigation Bar */
-/* .navBar { */
-nav {
-    background-color: white;
-    height: 100px;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    border-bottom: solid #dddddd;
-}
-
-.info {
-    margin: auto;
-}
-
-li.index, li.portfolio {
-    float: right;
-    display: table-cell;
-    margin: 30px 0px;
-    padding: 0px 30px;
-}
-
-li.contact {
-    float: right;
-    display: table-cell;
-    padding: 0;
-    margin: 30px 0px 0px 30px;
-}
-
-li.index, li.portfolio {
-    border-right: 1px solid #dddddd;
-}
-
-li a {
-    color: #777777;
-    text-decoration: none;
-}
-
-div.clearfix {
-    margin: auto;
-    width: 960px;
-}
-
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-ul {
-    float: right;
-}
-
-.name {
-    background-color: #4aaaa5;
-    color: white;
-    text-align: center;
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
-    font-size: 30px;
-    font-weight: bold;
-    padding: 33px;
-    float: left;
-    margin: 0;
-}
-
-/* General Container */
 body {
-    margin: 0px;
-    padding: 0px;
-    background-image: url("../images/concrete_seamless.png"); 
-    background-repeat: repeat;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #3D464A;
+    text-align: center;
+    background-color: #FAFBFD;
 }
 
 h1 {
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
-    color: #4aaaa5;
+    font-weight: bold;
 }
 
-p {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    color: #777777;
-    line-height: 1.5em;
-}
-
-img#lily {
-    width: 200px;
-    height: 330px;
-    padding-right: 15px;
-    float: left;
+h2 {
+    text-align: left;
+    font-weight: bold;
 }
 
 hr {
@@ -92,121 +19,44 @@ hr {
     border-width: 0px;
     background-color: #dddddd;
     color: #dddddd;
+    margin-bottom: 5px;
+    margin-top: 0;
 }
 
 .container {
-    padding: 30px;
-    margin-bottom: 10%;
-}
-
-.box {
-    width: 960px;
+    width: 90%;
     margin: auto;
-    margin-top: 10px;
-    border: 1px solid #dddddd;
-    border-collapse: separate;
-}
-
-.ibox {
+    border: 1px solid #ECEFEE;
+    border-radius: 5px;
     padding: 30px;
     background-color: white;
-    overflow: auto;
+    box-shadow: 0 2px 4px 0 #F4F5F5, 0 2px 4px 0 #F4F5F5;
+    overflow: hidden;
 }
 
-#intro {
+textarea {
+    border: 2px dashed #D7D7D7;
+    border-radius: 6px;
+    height: 100px;
+    width: 100%;
+    text-align: center;
     padding-top: 10px;
 }
 
-/* Footer */
-.footer {
-    background-color: #666666;
-    /* height: 100px; */
-    padding: 40px 0px 0px 0px;
-    margin: 30px 0px 0px 0px;
-    border-top: 8px solid #4aaaa5;
-    /* float: bottom; */
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    z-index: 999;
-}
-
-.footer p {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    text-align: center;
-    color: #dddddd;
-    /* position: absolute; */
-    width: 100%;
-    margin: 0px;
-    /* top: 60%; */
-}
-
-/* Contact */
-input[type=text], select, textarea  {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #dddddd;
-    box-sizing: border-box;
-    resize: vertical;
-
-}
-
-::placeholder {
-    color: #b1aeae;
-}
-
-#message  {
-    height: 200px;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 12px;
-}
-
-input[type=submit] {
-    width: 100px;
-    background-color: #4aaaa5;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-}
-  
-input[type=submit]:hover {
-    background-color: #4aaaa5;
-}
-
-/* Portfolio */
-.portfolioBox {
-    width: 70%;
-}
-
-img {
-    height: 200px;
-    width: 200px;
+#generate {
+    background-color: #B4050A;
     float: left;
 }
 
-.imageBox{
-    position: relative;
-    display: inline-block; /* Make the width of box same as image */
-    margin: 30px 30px 30px 0px;
-}
-.imageBox .text{
-    position: absolute;
-    z-index: 1;
-    padding: 15px 0 15px 0;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    top: 70%; /* Adjust this value to move the positioned div up and down */
-    text-align: center;
-    width: 100%;
-    background: #4aaaa5;
-    color: white;
+#copy {
+    background-color: #BEC8D1;
+    float: right;
 }
 
-.text a {
+#generate, #copy {
     color: white;
-    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
+    margin: 5px 10px;
 }
