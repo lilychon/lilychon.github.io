@@ -1,0 +1,33 @@
+User Flow
+---
+1. Open app in browser > create html, javascript, css
+2. See the date at the top of the page > function that gets date
+3. Schedule 1hr blocks (9am - 5pm) > function (loop)    
+    a. Time
+    b. Text area (type task) > unique ID for each row
+    c. Save hour (save button) > event handler
+4. If task is in the past - grey -> css styles > function if else
+5. If task is present - red > css 
+6. If task is future - blue
+
+
+To Build:
+------
+1. HTML Document:
+    a. Title
+    b. Table
+        1. Rows (each hour)
+            i. Time
+            ii. Text area
+            iii. Save button
+
+2. Javascript:
+    a. Function to build scheduler Rows (function buildRows) --> loop, moment.js
+    b. Set date at the top of page (function showTodaysDate) --> moment.js
+    c. Save button event handler (function saveRow) --> users localstorage
+    d. Change row styles (function updateRowStyle) --> moment.js
+        i. on page load, check current time (hour) against row in javascript
+        ii. update style for those that are past hours, present hours, future hours
+
+3. CSS
+    a. Already has styles

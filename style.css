@@ -1,74 +1,82 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
 }
 
-h1 {
-    text-emphasis: bold;
-    margin: auto;
-    text-align: center;
+textarea {
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  width: 900px;
+  height: 100%;
+  border-left: 1px solid black;
+  padding: 10px;
 }
 
-h3 {
-    text-align: center;
-    font-size: 14px;
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  border-bottom: 10px solid black;
 }
 
-p {
-    font-style: italic;
+.description{
+  white-space: pre-wrap;
+}
+
+.time-block{
+  text-align: center;
+  border-radius: 15px;
+}
+
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;
+  margin: 0;
+}
+
+.hour {
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+  width: 100px;
+  padding: 30px 0 0 20px;
+}
+
+.past {
+  background-color: #d3d3d3;
+  color: white;
+}
+
+.present {
+  background-color: #ff6961;
+  color: white;
+}
+
+.future {
+  background-color: #77dd77;
+  color: white;
+}
+
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06AED5;
+  color: white;
+  padding: 30px;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all .3s ease-in-out;
 }
 
 .container {
-    width: 100%;
-}
-
-#viewH {
-    float: left;
-    color: #4d00a5;
-}
-
-#viewT {
-    float: right;
-}
-
-#content {
-    margin: auto;
-    /* width: 60%; */
-    padding-top: 10%;
-}
-
-button {
-    display: block;
-    margin: auto;
-    background-color: #4d00a5;
-    color: white;
-    border-radius: 5px;
-    border: 1px #4d00a5 solid;
-}
-
-#buttons {
-    display: block;
-    margin: 10px 0 10px 0;
-    background-color: #4d00a5;
-    color: white;
-    border-radius: 5px;
-    border: 1px #4d00a5 solid;
-}
-
-#rorw {
-    float: left;
-    font-style: italic;
-}
-
-label {
-    margin-right: 10px;
-}
-
-.submitBtn {
-    float: left;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: none;
+  width: 100%;
+  margin: auto;
 }
