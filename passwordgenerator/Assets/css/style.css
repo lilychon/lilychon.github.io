@@ -1,0 +1,62 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #3D464A;
+    text-align: center;
+    background-color: #FAFBFD;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+h2 {
+    text-align: left;
+    font-weight: bold;
+}
+
+hr {
+    height: 2px;
+    border-width: 0px;
+    background-color: #dddddd;
+    color: #dddddd;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    border: 1px solid #ECEFEE;
+    border-radius: 5px;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 #F4F5F5, 0 2px 4px 0 #F4F5F5;
+    overflow: hidden;
+}
+
+textarea {
+    border: 2px dashed #D7D7D7;
+    border-radius: 6px;
+    height: 100px;
+    width: 99%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#generate {
+    background-color: #B4050A;
+    float: left;
+}
+
+#copy {
+    background-color: #BEC8D1;
+    float: right;
+}
+
+#generate, #copy {
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
+    margin: 5px 10px;
+}
