@@ -34,7 +34,7 @@ function buildForecast(response) {
 
     for (var i = 1; i < 6; i++) {
         const date = moment().add(i, 'days').format("M/D/YYYY");
-                                                                                                                                                                                                                n        ;''
+        
         var fiveDayDiv = $("<div id='fiveDayBox'>");
         var fiveDayDivDate = $("<h3>");
         fiveDayDivDate.html(date);
