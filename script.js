@@ -85,7 +85,7 @@ function displayWeatherInfo(city) {
         buildForecast(response);
 
         $.ajax({
-            url: "http://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat=" + response.city.coord.lat + "&lon=" + response.city.coord.lon
+            url: "https://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat=" + response.city.coord.lat + "&lon=" + response.city.coord.lon
             ,
             method: "GET"
         }).then(function (uvResponse) {
