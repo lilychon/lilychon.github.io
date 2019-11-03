@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="Assets/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container-fluid" id="navbar">
+        <div class="row">
+            <div class="col-md-3" id="name">
+            Lily Chon
+            </div>
+            <div class="col">
+                <nav class="nav">
+                    <a class="nav-link" id="index" href="index.html">About</a>
+                    <a class="nav-link" id="portfolio" href="portfolio.html">Portfolio</a>
+                    <a class="nav-link" id="contact" href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="margin">
+        <div class="row">
+            <div class="col-md-8" id="box">
+                <p id="about">Contact</p>
+                <hr>
+                <div class="row">
+                    <form action="mailto:lchon@perkinscoie.com?subject=contact_from_portfolio" enctype="text/plain">
+                        <p>
+                            
+                        <label for="fname">Name</label>
+                        <input type="text" id="fname" name="fullname" placeholder="Lily Chon">
+
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="example@gmail.com">
+
+                        <label for="message">Message</label>
+                        <!-- <input type="text" id="message" name="fullname" placeholder=""> -->
+                        <textarea id="message"></textarea>
+
+                        <input type="submit" value="Submit">
+
+                        </p>
+
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <div class="row" id="footer">
+        <p>Copyright ©</p>
+    </div>
+
+</body>
+
+</html>

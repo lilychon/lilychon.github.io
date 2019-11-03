@@ -1,53 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Weather Dashboard</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Lily Chon</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="Assets/css/style.css">
+
 </head>
 
 <body>
 
-    <body>
-        <nav class="navbar navbar-dark bg-dark flex-md-nowrap p-0">
-            <h1 class="col text-center">Weather Dashboard</h1>
-        </nav>
-
-        <div class="container-fluid">
-            <div class="row">
-                <nav class="col-md-4 d-none d-md-block bg-light sidebar">
-                    <div class="sidebar-sticky">
-                        <h3>Search for a City:</h3>
-                        <form class="form-inline ">
-                            <input class="form-control form-control-mds w-75" id="cityInput" type="text" placeholder="Search"
-                                aria-label="Search">
-                            <i class="searchBtn fas fa-search" aria-hidden="true"></i>
-                        </form>
-                        <div class="cityHistory"></div>
-                    </div>
+    <div class="container-fluid" id="navbar">
+        <div class="row">
+            <div class="col-md-3" id="name">
+            Lily Chon
+            </div>
+            <div class="col">
+                <nav class="nav">
+                    <a class="nav-link" id="index" href="index.html">About</a>
+                    <a class="nav-link" id="portfolio" href="portfolio.html">Portfolio</a>
+                    <a class="nav-link" id="contact" href="contact.html">Contact</a>
                 </nav>
+            </div>
+        </div>
+    </div>
 
-                <div class="col-md">
-                    <div class="weatherInfo">
-                    </div>
-                    <h2>5-Day Forecast:</h2>
-                    <div class="fiveDay"></div>
+    <div class="container-fluid" id="margin">
+        <div class="row">
+            <div class="col-md-8" id="box">
+                <p id="about">About Me</p>
+                <hr>
+                <div class="row">
+                    <section id="intro">
+                        <img class="img-responsive" id="lily" src="assets/images/lily.jpg" alt="Lily Chon" />
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas tempor tortor, vel
+                        egestas tortor finibus non. Duis ut dui erat. Nam in magna ac nulla sodales porttitor sit amet
+                        ac risus. Nulla auctor massa at sagittis varius. Donec luctus turpis et nulla vulputate
+                        elementum. Integer iaculis ligula eget massa hendrerit lobortis. Morbi sollicitudin mi eget
+                        pellentesque convallis. Praesent velit libero, rutrum nec leo vestibulum, egestas maximus
+                        turpis. Nulla euismod ipsum eget mollis mattis. Nulla interdum laoreet dui nec rhoncus. Etiam in
+                        vehicula neque. Praesent in leo ut magna egestas aliquam.
+                    </p>
+
+                    <p>
+                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                        Vivamus tincidunt ornare fermentum. Aenean mollis nunc a rutrum euismod. Cras mattis metus dui,
+                        ut porta nisl maximus in. Nullam euismod ultrices nibh vitae aliquam. Vivamus finibus risus sit
+                        amet vehicula hendrerit. Maecenas vehicula porta tristique. Morbi ac lorem leo. Nulla tincidunt
+                        consectetur auctor.
+                    </p>
+                    </section>
                 </div>
             </div>
         </div>
+    </div>
+        
+    <div class="row" id="footer">
+        <p>Copyright ©</p>
+    </div>
 
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-        <script src="script.js"></script>
-
-    </body>
+</body>
 
 </html>
