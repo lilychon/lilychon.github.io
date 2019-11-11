@@ -7,59 +7,131 @@
     <meta name="viewport" content="width=device-width">
     <title>Lily Chon</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="Assets/css/style.css">
 
 </head>
 
 <body>
 
-    <div class="container-fluid" id="navbar">
-        <div class="row">
-            <div class="col-md-3" id="name">
-            Lily Chon
-            </div>
-            <div class="col">
-                <nav class="nav">
-                    <a class="nav-link" id="index" href="index.html">About</a>
-                    <a class="nav-link" id="portfolio" href="portfolio.html">Portfolio</a>
-                    <a class="nav-link" id="contact" href="contact.html">Contact</a>
-                </nav>
+    <!--Navigation-section-->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top mx-auto">
+        <div class="container">
+            <a class="navbar-brand p-0" href="index.html" id="logo">
+                <h2>Lily Chon</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active pr-3">
+                        <a class="nav-link" href="#intro">Home</a>
+                    </li>
+                    <li class="nav-item  pr-3">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item pr-3">
+                        <a class="nav-link" href="#portfolios">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
+    </nav>
+    <!--Navigation-section-->
+
 
     <div class="container-fluid" id="margin">
         <div class="row">
-            <div class="col-md-8" id="box">
-                <p id="about">About Me</p>
-                <hr>
-                <div class="row">
-                    <section id="intro">
-                        <img class="img-responsive" id="lily" src="assets/images/lily.jpg" alt="Lily Chon" />
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas tempor tortor, vel
-                        egestas tortor finibus non. Duis ut dui erat. Nam in magna ac nulla sodales porttitor sit amet
-                        ac risus. Nulla auctor massa at sagittis varius. Donec luctus turpis et nulla vulputate
-                        elementum. Integer iaculis ligula eget massa hendrerit lobortis. Morbi sollicitudin mi eget
-                        pellentesque convallis. Praesent velit libero, rutrum nec leo vestibulum, egestas maximus
-                        turpis. Nulla euismod ipsum eget mollis mattis. Nulla interdum laoreet dui nec rhoncus. Etiam in
-                        vehicula neque. Praesent in leo ut magna egestas aliquam.
-                    </p>
+            <div class="col-3" id="box">
+                <section id="intro">
+                    <img id="lily" src="assets/images/me.png" alt="Lily Chon" />
+                    <h1>Lily Chon</h1>
+                    <p>Wannabe UI/UX Designer</p>
+                    <a href="https://github.com/lilychon" alt="Github"><i class="fab fa-github-alt"></i></a>
+                    <a href="https://www.linkedin.com/in/lily-chon-b05768112/" alt="Linkedin"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="Assets/CHONRESUME.pdf" alt="Resume"><i class="fas fa-file"></i></a>
 
-                    <p>
-                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                        Vivamus tincidunt ornare fermentum. Aenean mollis nunc a rutrum euismod. Cras mattis metus dui,
-                        ut porta nisl maximus in. Nullam euismod ultrices nibh vitae aliquam. Vivamus finibus risus sit
-                        amet vehicula hendrerit. Maecenas vehicula porta tristique. Morbi ac lorem leo. Nulla tincidunt
-                        consectetur auctor.
-                    </p>
+                </section>
+            </div>
+        </div>
+        <!-- <div class="row">
+            <div class="col" id="box">
+                <div class="row">
+                    <section id="about">
+                        <img id="cards" src="assets/images/project.png" alt="Project 1" />
+                        <img id="cards" src="assets/images/workday.png" alt="Workday Planner" />
+                        <img id="cards" src="assets/images/weather.png" alt="Weather Dashboard" />
                     </section>
                 </div>
             </div>
+        </div> -->
+        <div class="row">
+            <div class="col" id="box-1">
+                <section id="portfolios">
+                    <h3>Projects</h3><br>
+
+                    <div class="card" id="cards" style="width: 18rem;">
+                        <img src="assets/images/project.png" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Route Mapper</h5>
+                            <p class="card-text">Route Mapper</p>
+                            <a href="https://omerkatan1.github.io/project-1/" class="btn btn-primary">Launch</a>
+                            <a href="https://github.com/omerkatan1/project-1" class="btn btn-primary">Details</a>
+                        </div>
+                    </div>
+                    <div class="card" id="cards" style="width: 18rem;">
+                        <img src="assets/images/workday.png" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Workday Scheduler</h5>
+                            <p class="card-text">Workday Scheduler</p>
+                            <a href="https://lilychon.github.io/workdayscheduler/" class="btn btn-primary">Launch</a>
+                            <a href="https://github.com/lilychon/lilychon.github.io/tree/master/workdayscheduler" class="btn btn-primary">Details</a>
+                        </div>
+                    </div>
+                    <div class="card" id="cards" style="width: 18rem;">
+                        <img src="assets/images/weather.png" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Weather Dashboard</h5>
+                            <p class="card-text">Weather Dashboard</p>
+                            <a href="https://lilychon.github.io/weatherdashboard/" class="btn btn-primary">Launch</a>
+                            <a href="https://github.com/lilychon/lilychon.github.io/tree/master/weatherdashboard" class="btn btn-primary">Details</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" id="box">
+                <section id="contacts">
+                        <h3 id="black">Contact Me</h3><br>
+                    <form action="mailto:lchon@perkinscoie.com?subject=contact_from_portfolio" enctype="text/plain">
+                        <label for="fname">Name</label>
+                        <input type="text" id="fname" name="fullname" placeholder="Lily Chon">
+
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="example@gmail.com">
+
+                        <label for="message">Message</label>
+                        <!-- <input type="text" id="message" name="fullname" placeholder=""> -->
+                        <textarea id="message"></textarea>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </section>
+            </div>
         </div>
     </div>
-        
+
     <div class="row" id="footer">
         <p>Copyright ©</p>
     </div>

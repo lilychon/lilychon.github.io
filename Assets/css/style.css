@@ -1,9 +1,8 @@
 /* Navigation Bar */
 /* .navBar { */
-#navbar {
-    background-color: white;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    border-bottom: solid #dddddd;
+.navbar {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #DEDFE1;
 }
 
 .nav {
@@ -19,12 +18,9 @@
     float: right;
     display: table-cell;
     margin: 30px 0px;
-    padding: 0px 20px;
+    padding: 0px 10px;
 }
 
-#index, #portfolio {
-    border-right: 1px solid #dddddd;
-}
 
 a.nav-link {
     color: #777777;
@@ -32,47 +28,56 @@ a.nav-link {
     padding: 0px;
 }
 
-#name {
-    background-color: #4aaaa5;
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+h2 {
     color: white;
     text-align: center;
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
-    font-size: 30px;
+    font-family: 'Sacramento', cursive;
+    font-size: 40px;
     font-weight: bold;
     padding: 20px;
     float: left;
     margin-left: 20px;
 }
 
+h3 {
+    color: white;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+#black {
+    color: black;
+}
+
 /* General Container */
 body {
     margin: 0px;
     padding: 0px;
-    background-image: url("../images/concrete_seamless.png"); 
-    background-repeat: repeat;
+    /* background-image: url("../images/background.jpg");  */
+    background-color: #DEDFE1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
 }
 
 p {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-family: 'Quicksand', sans-serif;
     color: #777777;
     line-height: 1.5em;
     padding: 0 20px 0 20px;
 }
 
-p#about {
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
-    color: #4aaaa5;
-    font-weight: bold;
-    font-size: 30px;
-    margin: 0;
-    padding: 0;
-}
-
-img#lily {
-    width: 240px;
-    height: 350px;
-    padding: 0 20px 20px 20px;
-    float: left;
+#lily {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
 }
 
 hr {
@@ -85,10 +90,11 @@ hr {
 #container {
     padding: 30px;
     margin-bottom: 10%;
+    margin: auto;
 }
 
 #margin {
-    margin-bottom: 20%;
+    margin-top: 10%;
 }
 
 #padding {
@@ -97,10 +103,14 @@ hr {
 
 #box {
     padding-top: 30px;
-    margin: 20px 20px 0 20px;
-    background-color: white;
-    border: 1px solid #dddddd;
-    border-collapse: separate;
+    margin: auto;
+
+}
+
+#box-1 {
+    background-color: #777777;
+    padding: 20px;
+    margin-top: 30px;
 }
 
 #intro {
@@ -109,22 +119,19 @@ hr {
 
 /* Footer */
 #footer {
-    background-color: #666666;
     /* height: 100px; */
     padding: 20px 0px 0px 0px;
     margin: 20px 0px 0px 0px;
-    border-top: 8px solid #4aaaa5;
     /* float: bottom; */
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     bottom: 0;
-    z-index: 999;
 }
 
 #footer p {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-family: 'Quicksand', sans-serif;
     text-align: center;
-    color: #dddddd;
+    color: white;
     /* position: absolute; */
     width: 100%;
     margin: 0px;
@@ -149,12 +156,12 @@ input[type=text], select, textarea  {
 
 #message  {
     height: 200px;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 input[type=submit] {
     width: 100px;
-    background-color: #4aaaa5;
+    background-color: #777777;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -172,11 +179,6 @@ input[type=submit]:hover {
     
 }
 
-img {
-    height: 250px;
-    width: 280px;
-    float: left;
-}
 
 .imageBox{
     position: relative;
@@ -200,13 +202,28 @@ img {
 .text a {
     color: white;
     text-decoration: none;
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#cards {
+    margin: auto;
+    display: inline-block;
+}
+
+#contacts {
+    margin: 7%;
+}
+
+i {
+    color: #777777;
+    font-size: 30px;
+    margin: 10px;
 }
 
 /* Media CSS Bootstrap */
 @media (max-width: 980px) {
     #box {
-        margin-left: 20px;
+        margin: auto;
     }
 }
 
@@ -215,6 +232,10 @@ img {
         max-width: 100%;
         flex: 100%;
         margin-right: 20px;
+    }
+
+    #box {
+        margin: auto;
     }
 
 }
@@ -227,8 +248,12 @@ img {
         margin-right: auto;
     }
 
+    body {
+        background-size: cover;
+    }
+
     #box {
-        margin-right: 20px;
+        margin: auto;
     }
 
     #name {
@@ -241,7 +266,8 @@ img {
         height: 60px;
     }
 
-    #index, #portfolio, #contact {
-        margin-top: 15px;
+    .col-6 {
+        flex: 100%;
+        max-width: 100%
     }
 }
