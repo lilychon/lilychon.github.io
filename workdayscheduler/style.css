@@ -2,6 +2,28 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-image: url("bg2.png"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 30px 0 0 0;
+}
+
+.dots {
+  height: 15px;
+  width: 15px;
+  background: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 50px 0 0;
 }
 
 textarea {
@@ -9,9 +31,8 @@ textarea {
   border: none;
   resize: none;
   color: #000000;
-  width: 900px;
+  /* width: 70%; */
   height: 100%;
-  border-left: 1px solid black;
   padding: 10px;
 }
 
@@ -19,8 +40,7 @@ textarea {
   text-align: center;
   background-color: transparent;
   color: black;
-  border-radius: 0;
-  border-bottom: 10px solid black;
+  margin: 0;
 }
 
 .description{
@@ -42,33 +62,40 @@ textarea {
 .hour {
   background-color: #ffffff;
   color: #000000;
-  border-top: 1px dashed #000000;
   width: 100px;
   padding: 30px 0 0 20px;
 }
 
 .past {
-  background-color: #d3d3d3;
-  color: white;
+  background: #EFEFEF;
 }
 
 .present {
-  background-color: #ff6961;
-  color: white;
+  background: rgb(255, 166, 185);
 }
 
 .future {
-  background-color: #77dd77;
-  color: white;
+  background: rgba(251,0,54,1);
 }
 
-.saveBtn {
+/* .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
   padding: 30px;
+} */
+
+.saveBtn {
+  background: rgba(255,123,152,1);
+  background: linear-gradient(to right, rgba(255,123,152,1) 0%, rgba(251,0,54,1) 100%);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  width: 40px;
+  margin: auto;
 }
 
 .saveBtn i:hover {
@@ -77,6 +104,45 @@ textarea {
 }
 
 .container {
-  width: 100%;
+  width: 70%;
   margin: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  border-radius: 10px;
+  background: white;
+  opacity: 80%
+}
+
+h3 {
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.legend {
+  margin: 0 50px 0 0;
+  padding: 20px 10px 0 0;
+  right: -10px;
+}
+
+/* Media CSS Bootstrap */
+@media (max-width: 980px) {
+  .container {
+    width: 80%
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: 100%
+  }
 }
