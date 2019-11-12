@@ -2,7 +2,7 @@
 /* .navBar { */
 .navbar {
     font-family: 'Quicksand', sans-serif;
-    background-color: #DEDFE1;
+    background-color: #EFEFEF;
 }
 
 .nav {
@@ -59,8 +59,8 @@ h3 {
 body {
     margin: 0px;
     padding: 0px;
-    background-image: url("../images/883509.png"); 
-    background-color: #DEDFE1;
+    background-image: url("../images/eucalyptus.jpg"); 
+    background-color: #EFEFEF;
     background-repeat: no-repeat;
     background-size: contain;
     background-attachment: fixed;
@@ -116,7 +116,7 @@ hr {
 }
 
 #box-2 {
-    background-color: #DEDFE1;
+    background-color: #EFEFEF;
 }
 
 #intro {
@@ -258,6 +258,10 @@ i {
     color: white;
     font-size: 30px;
     margin: 10px;
+}
+
+.container-fluid {
+    padding: 0;
 }
 
 /* Media CSS Bootstrap */
