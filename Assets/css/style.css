@@ -1,10 +1,13 @@
 /* Navigation Bar */
 /* .navBar { */
-#navbar {
-    background: rgb(97,0,56);
-    background: linear-gradient(90deg, rgba(97,0,56,1) 0%, rgba(107,0,170,1) 35%, rgba(132,73,167,1) 59%, rgba(217,153,255,1) 100%);
-    font-family: 'Nunito Sans', sans-serif;
-    /* border-bottom: solid #dddddd; */
+.navbar {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #EFEFEF;
+}
+
+#logo {
+    width: 50%;
+    float: left;
 }
 
 .nav {
@@ -19,21 +22,10 @@
 #index, #portfolio, #contact {
     float: right;
     display: table-cell;
-    margin: 15% 0;
-    padding: 0px 20px;
-    color: white;
-    font-size: 18px;
-    opacity: 70%;
+    margin: 30px 0px;
+    padding: 0px 10px;
 }
 
-/* #index, #portfolio {
-    border-right: 1px solid #dddddd;
-} */
-
-a:hover {
-    color: white;
-    opacity: 100%;
-}
 
 /* a.nav-link {
     color: #777777;
@@ -41,12 +33,16 @@ a:hover {
     padding: 0px;
 } */
 
-#name {
-    /* background-color: #4aaaa5; */
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+h2 {
     color: white;
     text-align: center;
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 48px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 40px;
     font-weight: bold;
     padding: 20px;
     float: left;
@@ -55,35 +51,54 @@ a:hover {
     opacity: 80%;
 }
 
+h3 {
+    color: white;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+h4 {
+
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+
+}
+
+#black {
+    color: black;
+}
+
 /* General Container */
 body {
     margin: 0px;
     padding: 0px;
-    background: rgb(234, 234, 235);
+    background-image: url("../images/eucalyptus.jpg"); 
+    background-color: #EFEFEF;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-attachment: fixed;
+  background-position: right top; */
+    text-align: center;
 }
 
 p {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     color: #777777;
     line-height: 1.5em;
     padding: 0 20px 0 20px;
 }
 
-p#about {
-    font-family: 'Nunito Sans', sans-serif;
-    color: #4aaaa5;
-    font-weight: bold;
-    font-size: 30px;
-    margin: 0;
-    padding: 0;
+#lily {
+    width: 200px;
+    display: block;
+    margin: auto;
 }
 
-img#lily {
-    width: 240px;
-    height: 350px;
-    padding: 0 20px 20px 20px;
-    float: left;
-    /* box-shadow: 5px 10px 18px #888888; */
+#logo2 {
+        width: 300px;
+        display: block;
+        margin: auto;
 }
 
 hr {
@@ -96,10 +111,11 @@ hr {
 #container {
     padding: 30px;
     margin-bottom: 10%;
+    margin: auto;
 }
 
 #margin {
-    margin-bottom: 20%;
+    margin-top: 15%;
 }
 
 #padding {
@@ -109,33 +125,60 @@ hr {
 #box {
     padding-top: 30px;
     margin: auto;
-    margin-top: 20px;
-    background: rgb(234, 234, 235);
-    /* border: 1px solid #dddddd;
-    border-collapse: separate; */
+
+}
+
+#box-1 {
+    background-color: #777777;
+    padding: 30px 0 30px 0;
+}
+
+#box-2 {
+    background-color: #EFEFEF;
 }
 
 #intro {
     padding-top: 10px;
+    margin-bottom: 100px;
+}
+
+#intro-1 {
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+#contactme {
+    padding: 80px;
+}
+
+.circle {
+    /* background: #777777; */
+    background: rgba(255,123,152,1);
+    background: linear-gradient(to right, rgba(255,123,152,1) 0%, rgba(251,0,54,1) 100%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
+    /* padding: 30px; */
 }
 
 /* Footer */
 #footer {
-    background-color: white;
+    background-color: #777777;
     /* height: 100px; */
-    padding: 40px 0px 0px 0px;
-    margin: 40px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
     /* float: bottom; */
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     bottom: 0;
-    z-index: 999;
 }
 
 #footer p {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     text-align: center;
-    color: black;
+    color: white;
     /* position: absolute; */
     width: 100%;
     margin: 0px;
@@ -160,20 +203,30 @@ input[type=text], select, textarea  {
 
 #message  {
     height: 200px;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 input[type=submit] {
-    width: 100px;
-    background-color: #4aaaa5;
+    width: 100%;
+    background-color: #777777;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
 }
+
+.btn {
+    background-color: #777777;
+    border: none;
+    border-radius: 0;
+}
+
+.btn:hover {
+    background-color: #f6305a;
+}
   
 input[type=submit]:hover {
-    background-color: #4aaaa5;
+    background-color: #f6305a;
 }
 
 /* Portfolio */
@@ -183,18 +236,17 @@ input[type=submit]:hover {
     
 }
 
-img {
-    height: 250px;
-    width: 280px;
-    float: left;
+.row {
+    margin-left: 0;
 }
+
 
 .imageBox{
     position: relative;
     display: inline-block; /* Make the width of box same as image */
     margin: 20px 20px 20px 0px;
 }
-.imageBox .text{
+.imageBox .text {
     position: absolute;
     z-index: 1;
     padding: 10px 0 10px 0;
@@ -211,13 +263,62 @@ img {
 .text a {
     color: white;
     text-decoration: none;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#cards {
+    margin: 20px;
+    display: inline-block;
+}
+
+.card {
+    border-radius: 0;
+}
+
+.card-img-top {
+    border-radius: 0;
+}
+
+#contacts {
+    margin: 7%;
+}
+
+i {
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+/* Carousel DIV */
+.carousel-inner {
+    width: 80%;
+    padding: 0 40px;
+    margin: auto;
+    height: 500px;
+}
+
+.progress {
+    /* width: 200px; */
+    border-radius: 0;
+    background-color: #EFEFEF;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.progress-bar {
+    background: rgba(255,123,152,1);
+    background: linear-gradient(to right, rgba(255,123,152,1) 0%, rgba(251,0,54,1) 100%);
+    border: none;
 }
 
 /* Media CSS Bootstrap */
 @media (max-width: 980px) {
     #box {
-        margin-left: 20px;
+        margin: auto;
     }
 }
 
@@ -228,6 +329,10 @@ img {
         margin-right: 20px;
     }
 
+    #box {
+        margin: auto;
+    }
+
 }
 
 @media (max-width: 640px) {
@@ -236,10 +341,15 @@ img {
         display: block;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 10%;
+    }
+
+    body {
+        background-size: cover;
     }
 
     #box {
-        margin-right: 20px;
+        margin: auto;
     }
 
     #name {
@@ -252,13 +362,8 @@ img {
         height: 60px;
     }
 
-    #index, #portfolio, #contact {
-        margin-top: 15px;
+    .col-6 {
+        flex: 100%;
+        max-width: 100%
     }
-}
-
-/* Other stuff */
-
-.project1 {
-    width: 100%;
 }
