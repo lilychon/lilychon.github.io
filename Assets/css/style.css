@@ -51,6 +51,13 @@ h3 {
     font-weight: bold;
 }
 
+h4 {
+
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+
+}
+
 #black {
     color: black;
 }
@@ -112,7 +119,6 @@ hr {
 #box-1 {
     background-color: #777777;
     padding: 30px 0 30px 0;
-    margin-top: 30px;
 }
 
 #box-2 {
@@ -121,7 +127,7 @@ hr {
 
 #intro {
     padding-top: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 #contactme {
@@ -262,6 +268,27 @@ i {
 
 .container-fluid {
     padding: 0;
+}
+
+/* Carousel DIV */
+.carousel-inner {
+    width: 80%;
+    padding: 0 40px;
+    margin: auto;
+    height: 500px;
+}
+
+.progress {
+    /* width: 200px; */
+    border-radius: 0;
+    background-color: #EFEFEF;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.progress-bar {
+    background-color: pink;
+    border: none;
 }
 
 /* Media CSS Bootstrap */
