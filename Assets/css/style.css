@@ -5,6 +5,29 @@
     background-color: #EFEFEF;
 }
 
+.navcont {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.name {
+    color: white;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    /* padding: 20px; */
+    float: left;
+    /* margin-left: 20px;
+    letter-spacing: 0.2em;
+    opacity: 80%; */
+    position: absolute;
+    top: 50%;
+    left: 14%;
+    transform: translate(-50%, -50%);
+}
+
 #logo {
     width: 50%;
     float: left;
@@ -73,12 +96,11 @@ h4 {
 body {
     margin: 0px;
     padding: 0px;
-    background-image: url("../images/eucalyptus.jpg"); 
+    background-image: url("../images/lilyflower.png"); 
     background-color: #EFEFEF;
     background-repeat: no-repeat;
     background-size: contain;
-    /* background-attachment: fixed;
-  background-position: right top; */
+    background-attachment: fixed;
     text-align: center;
 }
 
