@@ -59,10 +59,12 @@ h3 {
 body {
     margin: 0px;
     padding: 0px;
-    /* background-image: url("../images/background.jpg");  */
+    background-image: url("../images/883509.png"); 
     background-color: #DEDFE1;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-attachment: fixed;
+  background-position: right top;
     text-align: center;
 }
 
@@ -113,15 +115,35 @@ hr {
     margin-top: 30px;
 }
 
+#box-2 {
+    background-color: #DEDFE1;
+}
+
 #intro {
     padding-top: 10px;
+    margin-bottom: 50px;
+}
+
+#contactme {
+    padding: 80px;
+}
+
+.circle {
+    background: #777777;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
+    /* padding: 30px; */
 }
 
 /* Footer */
 #footer {
+    background-color: #777777;
     /* height: 100px; */
     padding: 20px 0px 0px 0px;
-    margin: 20px 0px 0px 0px;
     /* float: bottom; */
     /* position: fixed; */
     width: 100%;
@@ -160,12 +182,18 @@ input[type=text], select, textarea  {
 }
 
 input[type=submit] {
-    width: 100px;
+    width: 100%;
     background-color: #777777;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
+}
+
+.btn {
+    background-color: #777777;
+    border: none;
+    border-radius: 0;
 }
   
 input[type=submit]:hover {
@@ -177,6 +205,10 @@ input[type=submit]:hover {
     /* width: 70%; */
     margin-left: 15px;
     
+}
+
+.row {
+    margin-left: 0;
 }
 
 
@@ -206,9 +238,16 @@ input[type=submit]:hover {
 }
 
 #cards {
-    margin: auto;
-    margin-bottom: 20px;
+    margin: 20px;
     display: inline-block;
+}
+
+.card {
+    border-radius: 0;
+}
+
+.card-img-top {
+    border-radius: 0;
 }
 
 #contacts {
@@ -216,7 +255,7 @@ input[type=submit]:hover {
 }
 
 i {
-    color: #777777;
+    color: white;
     font-size: 30px;
     margin: 10px;
 }
