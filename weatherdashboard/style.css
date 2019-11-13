@@ -22,6 +22,8 @@ h4 {
 
 body {
     color: #494949;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
 }
 
 nav {
@@ -34,6 +36,7 @@ nav {
     border-radius: 5px;
     color: white;
     padding: 13px;
+    margin-left: 10px;
 }
 
 .sidebar {
@@ -43,15 +46,15 @@ nav {
 }
 
 .col-md {
-    margin-left: 30%;
+    margin: auto;
 }
 
 .weatherInfo {
     padding: 20px;
     margin: 30px 10px 30px 0;
     width: 100%;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
+    /* border: 1px solid #cccccc;
+    border-radius: 5px; */
 }
 
 .cityHistory {
@@ -114,10 +117,21 @@ span {
 
 #icon {
     display: inline-block;
-    font-size: 30px;
-    padding-left: 10px;
+    font-size: 70px;
+    margin-bottom: 40px;
 }
 
 .uvIndexLow {
     background-color: green;
+}
+
+.cityBtn {
+    background: transparent;
+    display: inline-block;
+    border: none;
+}
+
+#searchHistory {
+    margin: 0;
+    line-height: 0;
 }
