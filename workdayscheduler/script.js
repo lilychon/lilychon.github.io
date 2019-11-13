@@ -21,23 +21,27 @@ $(document).ready(function () {
             time.text(times[i]);
             time.addClass("col-md-1 hour");
 
+            var dot = $("<span>");
+            dot.addClass("dot");
+
             var textArea = $("<textarea/>");
             textArea.attr("id", startTime++);
-            textArea.addClass("userInput col-md row");
+            textArea.addClass("col userInput row");
 
 
             if (startTime == currentTime) {
-                textArea.addClass("present")
+                dot.addClass("present")
             } else if (startTime > currentTime) {
-                textArea.addClass("future")
+                dot.addClass("future")
             } else {
-                textArea.addClass("past")
+                dot.addClass("past")
             }
 
             var saveBtn = $("<button>");
-            saveBtn.addClass("col-md-1 fas fa-save saveBtn");
+            saveBtn.html("<h3>+</h3>")
+            saveBtn.addClass("saveBtn");
 
-            row.append(time, textArea, saveBtn);
+            row.append(time, dot, textArea, saveBtn);
 
             $(".container").append(row);
 
