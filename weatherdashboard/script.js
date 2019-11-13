@@ -6,11 +6,11 @@ function renderCity() {
 
     if (citiesString) {
         cities = JSON.parse(citiesString)
-         $(".cityHistory").empty();
+        $(".cityHistory").empty();
         for (var i = 0; i < cities.length; i++) {
             var city = cities[i].split(" ").join("+")
             var cityHistory = $("<button cityval=" + city + ">" + cities[i] + "</button>");
-            cityHistory.addClass("btn btn-light w-100 cityBtn");
+            cityHistory.addClass("cityBtn");
             $(".cityHistory").append(cityHistory);
         }
         $(".cityBtn").on("click", getcity);
@@ -34,7 +34,7 @@ function buildForecast(response) {
 
     for (var i = 1; i < 6; i++) {
         const date = moment().add(i, 'days').format("M/D/YYYY");
-        
+
         var fiveDayDiv = $("<div id='fiveDayBox'>");
         var fiveDayDivDate = $("<h3>");
         fiveDayDivDate.html(date);
@@ -93,30 +93,48 @@ function displayWeatherInfo(city) {
 
             const currentDate = moment().format("M/D/YYYY");
 
-            $("<div>", {
-                html: "<h2>" + response.city.name + " (" + currentDate + ")" + "</h2>",
-                class: "city",
-                appendTo: ".weatherInfo"
-            })
+            // icon
             $("<div>", {
                 id: "icon",
                 appendTo: ".weatherInfo"
             })
+
+            // temp
             $("<div>", {
-                html: "<p>" + "Temperature: " + response.list[0].main.temp.toFixed(1) + " °F" + "</p>",
+                html: "<h2><b>" + response.list[0].main.temp.toFixed(1) + " °F </b></h2>",
                 class: "temp",
                 appendTo: ".weatherInfo"
             })
+
+            // city
+            $("<div>", {
+                html: "<h2>" + response.city.name + "</h2>",
+                class: "city",
+                appendTo: ".weatherInfo"
+            })
+
+            // date
+            $("<div>", {
+                html: currentDate,
+                class: "city",
+                appendTo: ".weatherInfo"
+            })
+
+            // humidity
             $("<div>", {
                 html: "<p>" + "Humidity: " + response.list[0].main.humidity + "%" + "</p>",
                 class: "humidity",
                 appendTo: ".weatherInfo"
             })
+
+            // wind
             $("<div>", {
                 html: "<p>" + "Wind Speed: " + response.list[0].wind.speed.toFixed(1) + " MPH" + "</p>",
                 class: "wind",
                 appendTo: ".weatherInfo"
             })
+
+            // UV
             var uvDiv = $("<div>");
             uvDiv.html("UV Index: ");
             var uv = $("<h4>");
@@ -128,7 +146,7 @@ function displayWeatherInfo(city) {
             if (uvResponse.value < 6) {
                 uv.addClass("uvIndexLow");
             } else {
-               uv.addClass("uvIndex")
+                uv.addClass("uvIndex")
             }
 
             var weatherIcon = response.list[0].weather[0].main;
@@ -148,7 +166,7 @@ function displayWeatherInfo(city) {
             else if (weatherIcon === "Rain") {
                 $("#icon").addClass("fas fa-cloud-showers-heavy");
             }
-    
+
             if (cities.indexOf(response.city.name) === -1) {
 
                 cities.push(response.city.name);
