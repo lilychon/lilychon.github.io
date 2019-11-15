@@ -9,7 +9,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css?family=Quicksand|Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Sacramento&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>Weather Dashboard</title>
 </head>
@@ -22,20 +22,24 @@
             <form class="form-inline ">
                 <input class="form-control form-control-mds w-75" id="cityInput" type="text" placeholder="Search"
                     aria-label="Search">
-              <i class="searchBtn fas fa-search" aria-hidden="true"></i>
+                <i class="searchBtn fas fa-search" aria-hidden="true"></i>
             </form>
-          </nav>
+        </nav>
 
         <div class="container-fluid">
-            <div class="row" id="top">
+            <div class="row top">
                 <div class="col-md">
                     <div class="weatherInfo">
                     </div>
+                </div>
+            </div>
+            <div class="row" id="bottom">
+                <div class="col-md">
                     <h2>5-Day Forecast</h2>
                     <div class="fiveDay"></div>
                 </div>
             </div>
-            <div class="row" id="bottom">
+            <div class="row">
                 <h3>Search History</h3>
                 <div class="cityHistory"></div>
             </div>

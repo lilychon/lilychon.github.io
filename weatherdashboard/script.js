@@ -149,6 +149,14 @@ function displayWeatherInfo(city) {
                 uv.addClass("uvIndex")
             }
 
+            if (response.list[0].main.temp >= 80) {
+                $(".top").addClass("above80");
+            } else if (response.list[0].main.temp < 30) {
+                $(".top").addClass("below30");
+            } else {
+                $(".top").addClass("above30");
+            }
+
             var weatherIcon = response.list[0].weather[0].main;
 
             if (weatherIcon === "Clear") {
