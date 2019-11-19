@@ -1,0 +1,87 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundation for Sites</title>
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+
+  <div class="row">
+    <div class="columns">
+      <h4>Search results</h4>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="columns">
+      <ul class="accordion" data-responsive-accordion-tabs="accordion medium-tabs large-accordion"
+        data-allow-all-closed="true" data-accordion data-multi-expand="true">
+        <li class="accordion-item is-active" data-accordion-item>
+          <a href="#" class="accordion-title">Weather Conditions</a>
+          <div class="accordion-content" data-tab-content>
+            <p>Weather Conditions:</p>
+            <!-- Insert Weather display funcitons here -->
+            <!-- Weather display funcitons ends -->
+          </div>
+        </li>
+        <li class="accordion-item" data-accordion-item>
+          <a href="#" class="accordion-title">Camera Information:</a>
+          <!-- Dynamic Camera tabs here -->
+          <div class='accordion-content' data-tab-content>
+            <ul class="tabs" data-responsive-accordion-tabs="tabs medium-accordion large-tabs"
+              data-allow-all-closed="true" id="example-tabs">
+              <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
+              <li class="tabs-title"><a href="#panel2">Tab 2</a></li>
+              <li class="tabs-title"><a href="#panel3">Tab 3</a></li>
+              <li class="tabs-title"><a href="#panel4">Tab 4</a></li>
+              <li class="tabs-title"><a href="#panel5">Tab 5</a></li>
+              <li class="tabs-title"><a href="#panel6">Tab 6</a></li>
+            </ul>
+
+            <div class="tabs-content" data-tabs-content="example-tabs">
+              <div class="tabs-panel is-active" id="panel1">
+                <p>one</p>
+                <p>Check me out! I'm a super cool Tab panel with text content!</p>
+              </div>
+              <div class="tabs-panel" id="panel2">
+                <p>two</p>
+                <img class="thumbnail" src="assets/img/generic/rectangle-7.jpg">
+              </div>
+              <div class="tabs-panel" id="panel3">
+                <p>three</p>
+                <p>Check me out! I'm a super cool Tab panel with text content!</p>
+              </div>
+              <div class="tabs-panel" id="panel4">
+                <p>four</p>
+                <img class="thumbnail" src="assets/img/generic/rectangle-2.jpg">
+              </div>
+              <div class="tabs-panel" id="panel5">
+                <p>five</p>
+                <p>Check me out! I'm a super cool Tab panel with text content!</p>
+              </div>
+              <div class="tabs-panel" id="panel6">
+                <p>six</p>
+                <img class="thumbnail" src="assets/img/generic/rectangle-8.jpg">
+              </div>
+            </div>
+          </div>
+          <!-- Dynamic Camera tabs end here -->
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
