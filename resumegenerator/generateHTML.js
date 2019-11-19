@@ -1,32 +1,32 @@
 const colors = {
-    green: {
-      wrapperBackground: "#E6E1C3",
-      headerBackground: "#C1C72C",
-      headerColor: "black",
-      photoBorderColor: "black"
-    },
-    blue: {
-      wrapperBackground: "#5F64D3",
-      headerBackground: "#26175A",
-      headerColor: "white",
-      photoBorderColor: "#73448C"
-    },
-    pink: {
-      wrapperBackground: "#879CDF",
-      headerBackground: "#FF8374",
-      headerColor: "white",
-      photoBorderColor: "#FEE24C"
-    },
-    red: {
-      wrapperBackground: "#DE9967",
-      headerBackground: "#870603",
-      headerColor: "white",
-      photoBorderColor: "white"
-    }
-  };
-  
-  function generateHTML(data) {
-    return `
+  green: {
+    wrapperBackground: "#E6E1C3",
+    headerBackground: "#C1C72C",
+    headerColor: "black",
+    photoBorderColor: "black"
+  },
+  blue: {
+    wrapperBackground: "#5F64D3",
+    headerBackground: "#26175A",
+    headerColor: "white",
+    photoBorderColor: "#73448C"
+  },
+  pink: {
+    wrapperBackground: "#879CDF",
+    headerBackground: "#FF8374",
+    headerColor: "white",
+    photoBorderColor: "#FEE24C"
+  },
+  red: {
+    wrapperBackground: "#DE9967",
+    headerBackground: "#870603",
+    headerColor: "white",
+    photoBorderColor: "white"
+  }
+};
+
+function generateHTML(data) {
+  return `
     <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -194,18 +194,18 @@ const colors = {
                               <h4>${data.public_repos}</h4>
                           </div>
                           <div class="card">
-                              <h3>Followers</h3>
-                              <h4>${data.followers}</h4>
+                              <h3>Github Stars</h3>
+                              <h4>${data.public_gists}</h4>
                           </div>
                       </div>
                       <div class="col">
                           <div class="card">
-                              <h3>Github Stars</h3>
-                              <h4>${data.public_gists}</h4>
-                          </div>
-                          <div class="card">
                               <h3>Followers</h3>
                               <h4>${data.followers}</h4>
+                          </div>
+                          <div class="card">
+                              <h3>Following</h3>
+                              <h4>${data.following}</h4>
                           </div>
                       </div>
                   </div>
@@ -214,6 +214,6 @@ const colors = {
       </div>
     </body>
 </html>`
-  }
-  
-  module.exports = generateHTML;
+}
+
+module.exports = generateHTML;
