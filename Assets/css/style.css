@@ -2,7 +2,12 @@
 /* .navBar { */
 .navbar {
     font-family: 'Quicksand', sans-serif;
-    background-color: #EFEFEF;
+}
+
+.navbar.scrolled {
+    background-color: white !important;
+    box-shadow: 0px 2px 19px -3px rgba(136,136,136,0.79);
+    transition: box-shadow 200ms linear;
 }
 
 .navcont {
@@ -96,8 +101,8 @@ h4 {
 body {
     margin: 0px;
     padding: 0px;
-    background-image: url("../images/lilyflower.png"); 
-    background-color: #EFEFEF;
+    /* background-image: url("../images/lilyflower.png");  */
+    /* background-color: #EFEFEF; */
     background-repeat: no-repeat;
     background-size: contain;
     background-attachment: fixed;
@@ -152,12 +157,12 @@ hr {
 }
 
 #box-1 {
-    background-color: #777777;
+    background-color: white;
     padding: 30px 0 30px 0;
 }
 
 #box-2 {
-    background-color: #EFEFEF;
+    background-color: white;
 }
 
 #intro {
@@ -300,6 +305,7 @@ input[type=submit]:hover {
 
 .card-img-top {
     border-radius: 0;
+    height: 200px;
 }
 
 #contacts {

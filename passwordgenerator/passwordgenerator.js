@@ -1,10 +1,10 @@
-var length;
-var specials = '!"#$%&()*+,-./:;<=>?@[\]^_`{|~';
-var numbers = '1234567890';
-var lowers = 'abcdefghijklmnopqrstuvwxyz';
-var uppers = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-var passBox = document.getElementById("password");
-var rPassword = '';
+let length;
+let specials = '!"#$%&()*+,-./:;<=>?@[\]^_`{|~';
+let numbers = '1234567890';
+let lowers = 'abcdefghijklmnopqrstuvwxyz';
+let uppers = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+let passBox = document.getElementById("password");
+let rPassword = '';
 
 const MIN = 8;
 const MAX = 128;
@@ -29,10 +29,10 @@ function generatePassword() {
     }
 
     alertThis("Please choose at least 1 Character type.")
-    var special = confirm("Would you like Special characters (!#$%&'()*+,-./:;<=>?@[\]^_`{|}~) in your random password?");
-    var number = confirm("Would you like Numeric Characters (0123456789) in your random password?");
-    var lower = confirm("Would you like Lowercase Characters (abcdefghijklmnopqrstuvwxyz) in your random password?");
-    var upper = confirm("Would you like Uppercase Characters (ABCDEFGHIJKLMNOPQRSTUVWXYZ) in your random password?");
+    let special = confirm("Would you like Special characters (!#$%&'()*+,-./:;<=>?@[\]^_`{|}~) in your random password?");
+    let number = confirm("Would you like Numeric Characters (0123456789) in your random password?");
+    let lower = confirm("Would you like Lowercase Characters (abcdefghijklmnopqrstuvwxyz) in your random password?");
+    let upper = confirm("Would you like Uppercase Characters (ABCDEFGHIJKLMNOPQRSTUVWXYZ) in your random password?");
 
     if (special === false && number === false && lower === false && upper === false) {
         alert("You must choose at least 1 Character type.");
@@ -54,9 +54,9 @@ function generatePassword() {
         rPassword += uppers;
     }
 
-    var randomP = "";
+    let randomP = "";
 
-    for (var i = 0; i < length; i++) {
+    for (let i = 0; i < length; i++) {
         randomP += rPassword.charAt(Math.floor(Math.random() * Math.floor(rPassword.length - 1)));
     }
     
@@ -70,8 +70,8 @@ function alertThis(message) {
 
 // Copy text from password field to clipboard
 function copyToClip() {
-	var value = document.getElementById("password").innerHTML;
-	var input_temp = document.createElement("input");
+	let value = document.getElementById("password").innerHTML;
+	let input_temp = document.createElement("input");
 	input_temp.value = value;
 	document.body.appendChild(input_temp);
 	input_temp.select();
