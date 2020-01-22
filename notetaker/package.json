@@ -1,0 +1,21 @@
+{
+  "name": "notetaker",
+  "version": "1.0.0",
+  "description": "Note taking application that allows saving, updating, and deleting notes.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lilychon/lilychon.github.io/tree/master/notetaker"
+  },
+  "author": "Lily Chon",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "util": "^0.12.1"
+  }
+}
